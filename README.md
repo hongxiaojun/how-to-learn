@@ -46,6 +46,25 @@
 
 所有概念解剖文件存放在 `/concepts/` 目录，采用 Markdown 格式，Denote 风格命名。
 
+## 自动同步
+
+本项目包含自动同步系统，可以自动将新创建的概念解剖文件推送到 GitHub。
+
+**快速安装：**
+```bash
+cd /tmp/how-to-learn/scripts
+./install-sync.sh
+```
+
+安装后，系统会**每周六晚上 8 点**自动同步新文件到 GitHub。
+
+**手动同步：**
+```bash
+bash /tmp/how-to-learn/scripts/sync-concepts.sh
+```
+
+详细说明请查看：[scripts/README_SYNC.md](scripts/README_SYNC.md)
+
 ## 使用示例
 
 尝试解剖这些概念：
